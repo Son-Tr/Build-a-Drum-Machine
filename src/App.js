@@ -1,9 +1,10 @@
 import './App.css';
+import ListDrumPad from './Components/ListDrumPad';
 
 function App() {
   return (
     <>
-    hello react
+    <ListDrumPad/>
     </>
   );
 }
