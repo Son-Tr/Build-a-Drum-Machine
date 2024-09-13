@@ -1,0 +1,68 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* drum machine in app.js */
+
+#drum-machine {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.control-drum,
+.list-drum-pad {
+    flex: 1;
+}
+
+/* list-drum-pad in listDrumPad */
+
+.list-drum-pad {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+.drum-pad {
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.drum-pad:focus-visible{
+    outline: none;
+}
+
+.drum-pad:active{
+    scale: 0.98;
+    background-color: yellow;
+}
+.drum-pad .active{
+    scale: 0.98;
+    background-color: yellow;
+}
+
+/* ControlDrumMachine */
+
