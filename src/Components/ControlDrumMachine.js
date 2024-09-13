@@ -20,7 +20,7 @@ function ControlDrumMachine() {
         <div className='control-drum'>
             <h2 id='display'>{currentDrumPadName}</h2>
             <div className='volume'>
-                <label htmlFor="volume-control" style={{ marginRight: '10px' }}>Volume:</label>
+                <label htmlFor="volume-control" >Volume:</label>
                 <input
                     type="range"
                     id="volume-control"

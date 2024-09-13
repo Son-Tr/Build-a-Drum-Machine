@@ -3,6 +3,8 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #666A86;
+
     user-select: none;
     /* Chrome, Opera, Safari */
     -webkit-user-select: none;
@@ -16,6 +18,7 @@ html {
 #root {
     width: 100%;
     height: 100vh;
+    background: #A8D0DB;
 
 }
 
@@ -26,17 +29,24 @@ html {
     align-items: center;
 }
 
+.title {
+    margin: 3rem;
+}
+
 /* drum machine in app.js */
 
 #drum-machine {
-    border: 1px solid black;
+    border: none;
     display: flex;
     justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .control-drum,
 .list-drum-pad {
-    flex: 1;
+    width: 50%;
 }
 
 /* list-drum-pad in listDrumPad */
@@ -54,9 +64,10 @@ html {
     text-align: center;
     font-size: 2rem;
     font-weight: 500;
-    border: 1px solid black;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: none;
 }
 
 .drum-pad:focus-visible {
@@ -65,12 +76,72 @@ html {
 
 .drum-pad:active {
     scale: 0.98;
-    background-color: yellow;
+    background-color: #FFF689;
 }
 
 .drum-pad.active {
     scale: 0.98;
-    background-color: yellow;
+    background-color: #FFF689;
 }
 
 /* ControlDrumMachine */
+#display {
+    background: #FBAF00;
+    padding: 0.5rem 2rem;
+    width: 70%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: #666A86;
+    ;
+}
+
+
+.control-drum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.volume {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+#volume-control::-webkit-slider-thumb {
+    cursor: pointer;
+}
+
+.volume-value {
+    width: 40px;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    margin: 1rem 0 0;
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0 5px 0;
+    color: #666A86;
+}
+
+/* resopnsive */
+@media screen and (max-width: 580px) {
+    #drum-machine {
+        flex-direction: column-reverse;
+    }
+
+    .control-drum,
+    .list-drum-pad {
+        width:100%;
+    }
+}
