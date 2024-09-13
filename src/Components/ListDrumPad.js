@@ -15,15 +15,16 @@ function ListDrumPad() {
         }
     }, [listAudio])
 
+
     // handle press key play audio 
     const handlePressKey = (e) => {
         const pressKey = e.key.toUpperCase(); // convert key to upper case
-        let name = listAudio.find(item=> item.type === pressKey)?.name
+        let name = listAudio.find(item=> item.type === pressKey)?.name //get name value
         const audio = document.getElementById(pressKey);
         if (audio) {
             audio.currentTime = 0;
             audio.play()
-            addActiveCss(pressKey, name)
+            addActiveCss( name) // add active class
             dispatch(setDisplayText(name))// Dispatch action to update display text
         }
     }
@@ -31,7 +32,7 @@ function ListDrumPad() {
    
     // handle click button play audio
     const handleClickBtn = (e) => {
-        const pad = e.currentTarget;
+        const pad = e.currentTarget;  // Get the element that triggered the event
         const audio = pad.querySelector(".clip")
         if (audio) {
             audio.currentTime = 0;
@@ -40,7 +41,8 @@ function ListDrumPad() {
         }
     }
 
-    const addActiveCss = (key, name) => {
+    // add active class 
+    const addActiveCss = ( name) => {
         let btn = document.getElementById(name)
         if (btn) {
             btn.classList.add("active");
