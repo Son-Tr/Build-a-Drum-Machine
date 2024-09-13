@@ -42,6 +42,7 @@ html {
     gap: 1rem;
     padding: 2rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   
 }
 
 .control-drum,
@@ -68,6 +69,7 @@ html {
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border: none;
+    background-color:rgba(0, 0, 0, 0.1) ;
 }
 
 .drum-pad:focus-visible {

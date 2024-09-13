@@ -56,10 +56,10 @@ function ListDrumPad() {
         return listAudio.map(item => {
             let { type, name, src } = item;
             return (
-                <button className="drum-pad" id={name} key={name} onClick={handleClickBtn}>{type}
+                <div className="drum-pad" id={name} key={name} onClick={handleClickBtn}>{type}
                     <audio id={type} className="clip" src={src}>
                     </audio>
-                </button>
+                </div>
             )
         })
     }
