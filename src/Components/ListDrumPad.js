@@ -9,7 +9,7 @@ function ListDrumPad() {
     // const dispatch = useDispatch();
 
 
-     // Adding and cleaning up the event listener using useEffect
+    // Adding and cleaning up the event listener using useEffect
     useEffect(() => {
         window.addEventListener("keydown", handlePressKey)
         return () => {
@@ -19,22 +19,21 @@ function ListDrumPad() {
     // handle press key play audio 
     const handlePressKey = (e) => {
         const presskey = e.key.toUpperCase(); // convert key to upper case
-       let name = listAudio.filter(item=> item.type=== presskey).map(item=> item.name)
-       
+        let name = listAudio.filter(item => item.type === presskey).map(item => item.name)
         const audio = document.getElementById(presskey);
         if (audio) {
             audio.currentTime = 0;
             audio.play()
-            addActiveCss(presskey,name)
+            addActiveCss(presskey, name)
         }
     }
 
-    const addActiveCss =(key,name)=>{
+    const addActiveCss = (key, name) => {
         let padElement = document.getElementById(key);//
         let btn = document.getElementById(name)
-        if(padElement){
+        if (padElement) {
             btn.classList.add("active");
-            setTimeout(()=> btn.classList.remove("active"),100);
+            setTimeout(() => btn.classList.remove("active"), 100);
         }
     }
 

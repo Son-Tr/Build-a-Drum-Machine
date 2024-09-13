@@ -35,7 +35,7 @@ html {
 
 .list-drum-pad {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
@@ -51,18 +51,18 @@ html {
     cursor: pointer;
 }
 
-.drum-pad:focus-visible{
+.drum-pad:focus-visible {
     outline: none;
 }
 
-.drum-pad:active{
+.drum-pad:active {
     scale: 0.98;
     background-color: yellow;
 }
-.drum-pad .active{
+
+.drum-pad.active {
     scale: 0.98;
     background-color: yellow;
 }
 
 /* ControlDrumMachine */
-
