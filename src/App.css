@@ -3,7 +3,6 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #666A86;
 
     user-select: none;
     /* Chrome, Opera, Safari */
@@ -18,7 +17,8 @@ html {
 #root {
     width: 100%;
     height: 100vh;
-    background: #A8D0DB;
+    color: black;
+    background-image: linear-gradient(180deg, #dcecff, #85bdfd);
 
 }
 
@@ -42,7 +42,7 @@ html {
     gap: 1rem;
     padding: 2rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-   
+
 }
 
 .control-drum,
@@ -69,7 +69,7 @@ html {
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border: none;
-    background-color:rgba(0, 0, 0, 0.1) ;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .drum-pad:focus-visible {
@@ -133,7 +133,7 @@ footer {
 footer a {
     text-decoration: none;
     margin: 0 5px 0;
-    color: #666A86;
+    color: #000;
 }
 
 /* resopnsive */
@@ -144,6 +144,6 @@ footer a {
 
     .control-drum,
     .list-drum-pad {
-        width:100%;
+        width: 100%;
     }
 }
