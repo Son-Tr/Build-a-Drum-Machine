@@ -2,14 +2,7 @@
 # Drum Machine App  
 
 ## Description  
-The Drum Machine App is an interactive musical tool that allows users to play different drum sounds by clicking on buttons or pressing keys on their keyboard. Each button is mapped to a specific audio sample, making it easy to create beats.  
-
-The app features:  
-- A volume control slider for adjustable sound levels.  
-- Customizable sound effects.  
-- A visually appealing and user-friendly layout.  
-
-Built with React, the app uses JavaScript to handle keyboard events and manage audio playback effectively.  
+The Drum Machine App is an interactive musical tool that allows users to play different drum sounds by clicking on buttons or pressing keys on their keyboard. Each button is mapped to a specific audio sample, making it easy to create beats. Built with React, the app uses JavaScript to handle keyboard events and manage audio playback effectively.  
 
 ## Technologies Used  
 - **React**  
