@@ -22,8 +22,7 @@ Built with React, the app uses JavaScript to handle keyboard events and manage a
 - Supports responsive design and an intuitive user interface.  
 
 ## Live Demo  
-You can view the live demo of the project here: [Insert your live demo link here]  
+You can view the live demo of the project here: [https://drum-machine-project-son-tr.vercel.app/]  
 
 ## Acknowledgments  
 - Thanks to **FreeCodeCamp** for their inspiring project ideas and guidance in building this app.  
-  `;
